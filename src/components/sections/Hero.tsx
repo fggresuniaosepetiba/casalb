@@ -59,7 +59,7 @@ export function Hero() {
             className="font-body text-cinza text-sm md:text-base lg:text-lg max-w-md mb-8 md:mb-10 leading-relaxed"
           >
             Bolos personalizados, docinhos artesanais e sobremesas feitas com ingredientes
-            selecionados e muito carinho para tornar seus dias ainda mais especiais.
+            selecionados e muito carinho para tornar seus dias ainda mais especiais. Fale conosco no WhatsApp
           </motion.p>
 
           <motion.div
