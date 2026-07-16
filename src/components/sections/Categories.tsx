@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Sparkles } from 'lucide-react'
 import { SectionTitle } from '../ui/SectionTitle'
 import { AnimatedSection } from '../ui/AnimatedSection'
 import { categories } from '../../data/categories'
@@ -12,6 +13,15 @@ export function Categories({ onCategorySelect, selectedCategory }: CategoriesPro
   return (
     <section id="categorias" className="py-16 md:py-24 bg-creme">
       <div className="section-container">
+        <div className="flex justify-center mb-6 md:mb-8">
+          <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 border border-azul/20 shadow-sm">
+            <Sparkles className="w-4 h-4 text-chocolate" />
+            <span className="font-accent text-sm font-semibold text-chocolate">
+              Confeitaria Artesanal
+            </span>
+          </div>
+        </div>
+
         <SectionTitle
           title="Nossas Categorias"
           subtitle="Explore nossa seleção de doces e salgados artesanais"
