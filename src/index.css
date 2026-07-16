@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #2C2C2C;
+    background-color: #FFF8F0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+  }
+
+  ::selection {
+    background-color: #8FC7F3;
+    color: #2C2C2C;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #FFF8F0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #8FC7F3;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6B4226;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-chocolate text-white font-body font-medium px-6 py-3 rounded-full
+           transition-all duration-300 hover:bg-chocolate-escuro hover:shadow-lg
+           active:scale-95 focus:outline-none focus:ring-2 focus:ring-chocolate focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-azul text-chocolate-escuro font-body font-semibold px-6 py-3 rounded-full
+           transition-all duration-300 hover:bg-azul-claro hover:shadow-lg
+           active:scale-95 focus:outline-none focus:ring-2 focus:ring-azul focus:ring-offset-2;
+  }
+
+  .btn-whatsapp {
+    @apply bg-sucesso text-white font-body font-semibold px-6 py-3 rounded-full
+           transition-all duration-300 hover:bg-green-600 hover:shadow-lg
+           active:scale-95 focus:outline-none focus:ring-2 focus:ring-sucesso focus:ring-offset-2;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md rounded-2xl shadow-lg border border-white/40;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
