@@ -1,3 +1,4 @@
+// Feito por João Ribeiro
 import { useState, useEffect } from 'react'
 import { CartProvider } from './context/CartContext'
 import { Navbar } from './components/layout/Navbar'
