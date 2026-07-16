@@ -77,7 +77,7 @@ export function AboutLaura() {
                   Uma história construída com carinho, dedicação e muitos momentos especiais.
                 </p>
                 <p>
-                  Sou Laura Peixoto, fundadora da Casa LB de Doces e apaixonada pela confeitaria há mais de 10 anos. O que começou como um hobby, movido pelo prazer de preparar doces para familiares e amigos, transformou-se em um sonho realizado e em uma marca que hoje participa de aniversários, casamentos, batizados, mesversários e tantas outras celebrações.
+                  Sou Laura Peixoto, fundadora da Casa LB de Doces e apaixonada pela confeitaria há mais de 10 anos. O que começou como um hobby, movido pelo prazer de preparar doces para familiares e amigos, transformou-se em um sonho realizado e em uma marca que hoje participa de aniversários, casamentos, batizados, mesversários e tantas outras celebrações. Teste
                 </p>
                 <p>
                   Acredito que cada doce tem o poder de criar memórias afetivas. Por isso, escolho cuidadosamente cada ingrediente, preparo cada receita de forma artesanal e acompanho pessoalmente cada detalhe da produção, garantindo qualidade, sabor e uma apresentação que encanta antes mesmo da primeira mordida.
