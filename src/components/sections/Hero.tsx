@@ -56,7 +56,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="font-body text-cinza text-sm md:text-base lg:text-lg max-w-md mb-8 md:mb-10 leading-relaxed"
+            className="font-body font-medium text-chocolate text-sm md:text-base lg:text-lg max-w-md mb-8 md:mb-10 leading-relaxed"
           >
             Bolos personalizados, docinhos artesanais e sobremesas feitas com ingredientes
             selecionados e muito carinho para tornar seus dias ainda mais especiais. Fale conosco no WhatsApp
