@@ -17,7 +17,7 @@ export function Hero() {
         src="/images/image_hero_2.png"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center md:object-[65%_center]"
+        className="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-[65%_center]"
         loading="eager"
       />
 
@@ -31,7 +31,7 @@ export function Hero() {
       <div
         className="absolute inset-0 md:hidden"
         style={{
-          background: 'linear-gradient(to bottom, rgba(255,248,240,0.95) 0%, rgba(255,248,240,0.80) 40%, rgba(255,248,240,0.50) 65%, rgba(255,248,240,0.30) 100%)',
+          background: 'linear-gradient(to bottom, rgba(255,248,240,0.75) 0%, rgba(255,248,240,0.40) 35%, rgba(255,248,240,0.15) 55%, rgba(255,248,240,0.80) 85%, rgba(255,248,240,0.97) 100%)',
         }}
       />
 
