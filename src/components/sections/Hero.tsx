@@ -12,31 +12,44 @@ export function Hero() {
         background: 'linear-gradient(135deg, #FFF8F0 0%, #FDF5EC 30%, #F8EDE0 60%, #F5E8D8 100%)',
       }}
     >
-      {/* Full background image */}
+      {/* Desktop: full background image */}
       <img
         src="/images/image_hero_2.png"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center md:object-[65%_center]"
+        className="absolute inset-0 w-full h-full object-cover object-[65%_center] hidden md:block"
         loading="eager"
       />
 
-      {/* Gradient overlay for text readability */}
+      {/* Mobile: image contained, visible */}
+      <div className="absolute inset-0 md:hidden flex items-center justify-center">
+        <img
+          src="/images/image_hero_2.png"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-[55vh] object-contain object-center"
+          loading="eager"
+        />
+      </div>
+
+      {/* Desktop overlay */}
       <div
         className="absolute inset-0 hidden md:block"
         style={{
           background: 'linear-gradient(to right, rgba(255,248,240,0.92) 0%, rgba(255,248,240,0.70) 30%, rgba(255,248,240,0.15) 55%, rgba(255,248,240,0) 70%)',
         }}
       />
+
+      {/* Mobile overlay — very light so cake is visible */}
       <div
         className="absolute inset-0 md:hidden"
         style={{
-          background: 'linear-gradient(to bottom, rgba(255,248,240,0.95) 0%, rgba(255,248,240,0.80) 40%, rgba(255,248,240,0.50) 65%, rgba(255,248,240,0.30) 100%)',
+          background: 'linear-gradient(to bottom, rgba(255,248,240,0.60) 0%, rgba(255,248,240,0.10) 40%, rgba(255,248,240,0.10) 55%, rgba(255,248,240,0.85) 80%, rgba(255,248,240,0.97) 100%)',
         }}
       />
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen flex flex-col justify-end md:justify-center px-6 sm:px-10 lg:px-16 xl:px-24 pb-24 md:pb-0 pt-32 md:pt-32">
+      <div className="relative z-10 min-h-screen flex flex-col justify-end md:justify-center px-6 sm:px-10 lg:px-16 xl:px-24 pb-12 md:pb-0 pt-32 md:pt-32">
         <div className="max-w-[520px]">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
